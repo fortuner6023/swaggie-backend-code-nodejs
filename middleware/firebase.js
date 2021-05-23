@@ -1,5 +1,5 @@
 const firebase = require("firebase/app");
-const firebaseAccount = require("../features/users/firebase.json");
+const firebaseAccount = require("../api-Routes/users/firebase.json");
 require("firebase/auth");
 require("firebase/firestore");
 

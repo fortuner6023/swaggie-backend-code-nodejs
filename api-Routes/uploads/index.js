@@ -4,7 +4,7 @@ const router = express.Router();
 const createError = require("http-errors");
 const asyncHandler = require("express-async-handler");
 const auth = require("../../middleware/authentication");
-const { Categories } = require("../jobs/category/model");
+const { Categories } = require("../../models/jobs/category/model");
 
 const S3_BUCKET = process.env.Bucket;
 aws.config.update({

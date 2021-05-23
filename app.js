@@ -6,7 +6,7 @@ const logger = require("morgan");
 const cors = require("cors");
 const { errorHandler, route404Handler } = require("./middleware/errorHandler");
 const apiRouter = require("./api-Routes/index");
-const connect = require("./db");
+const connect = require("./db"); 
 const app = express();
 const expressSwagger = require("express-swagger-generator")(app);
 const xmlparser = require("express-xml-bodyparser");
@@ -54,7 +54,7 @@ expressSwagger({
     }
   },
   basedir: __dirname, //app absolute path
-  files: ["./features/**/*.js"] //Path to the API handle folder
+  files: ["./api-Routes/**/*.js"] //Path to the API handle folder
 });
 
 // Route definitions

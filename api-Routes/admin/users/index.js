@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 const createError = require("http-errors");
 const asyncHandler = require("express-async-handler");
-const schema = require("./schema");
+const schema = require("../../../models/admin/users/schema");
 const bcrypt = require("bcrypt");
-const { Admins } = require("./model");
+const { Admins } = require("../../../models/admin/users/model");
 const {
-  JWK, // JSON Web Key (JWK) 
+  JWK, // JSON Web Key (JWK)  
   JWT // JSON Web Token (JWT)
 } = require("jose");
 const fs = require("fs");

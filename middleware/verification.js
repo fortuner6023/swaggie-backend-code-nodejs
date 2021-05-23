@@ -1,6 +1,6 @@
 const createError = require("http-errors");
 
-const { Users } = require("../features/users/model");
+const { Users } = require("../models/users/model");
 /**
  * Marks a user as verified once they complete their profile
  */

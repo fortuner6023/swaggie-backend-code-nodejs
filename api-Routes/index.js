@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const workersRoute = require("../workers/index");
+const workersRoute = require("./workers/index");
 const jobsRoute = require("./jobs/index.js");
 const employersRoute = require("./employers/index.js");
 const usersRoute = require("./users/index.js");

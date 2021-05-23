@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const createError = require("http-errors");
 const asyncHandler = require("express-async-handler");
-const { Jobs, TempJobs, FinalJobs } = require("./model");
+const { Jobs, TempJobs, FinalJobs } = require("../../models/jobs/model");
 var mongoose = require("mongoose");
 const {
   searchJobs,
@@ -12,12 +12,12 @@ const {
   updateApplicant,
   updateJobs,
   createTempJobs
-} = require("./schema");
+} = require("../../models/jobs/schema");
 const auth = require("../../middleware/authentication");
-const employer = require("../employers/model");
-const { Workers } = require("../workers/model");
-const { Users } = require("../users/model");
-const { Categories } = require("../jobs/category/model");
+const employer = require("../../models/employers/model");
+const { Workers } = require("../../models/workers/model");
+const { Users } = require("../../models/users/model");
+const { Categories } = require("../../models/jobs/category/model");
 
 const compareAsc = require("date-fns/compareAsc");
 const formatISO = require("date-fns/formatISO");
