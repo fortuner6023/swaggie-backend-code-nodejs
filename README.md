@@ -1,1 +1,1 @@
-Git Origin Url git remote add origin https://github.com/swipelighter/swaggie-backend-node-v2.git
+Git Origin Url git remote add origin https://github.com/fortuner6023/swaggie-backend-code-nodejs
